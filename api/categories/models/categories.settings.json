@@ -16,8 +16,8 @@
       "type": "string"
     },
     "sub_categories": {
-      "via": "categories",
       "collection": "sub-categories",
+      "via": "categories",
       "dominant": true
     }
   }

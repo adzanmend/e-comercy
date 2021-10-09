@@ -24,13 +24,14 @@
     "sub_category_id": {
       "type": "biginteger"
     },
-    "sub_categories": {
-      "via": "products",
-      "collection": "sub-categories"
-    },
     "chart_details": {
       "via": "products",
       "collection": "chart-details",
+      "dominant": true
+    },
+    "sub_categories": {
+      "collection": "sub-categories",
+      "via": "products",
       "dominant": true
     }
   }

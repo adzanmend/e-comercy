@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "category_id": {
       "type": "biginteger"
+    },
+    "name": {
+      "type": "string"
     },
     "categories": {
       "via": "sub_categories",
@@ -24,8 +24,7 @@
     },
     "products": {
       "via": "sub_categories",
-      "collection": "products",
-      "dominant": true
+      "collection": "products"
     }
   }
 }
