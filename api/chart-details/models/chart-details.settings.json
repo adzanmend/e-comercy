@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chart_details",
+  "info": {
+    "name": "chart_details",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chart_id": {
+      "type": "biginteger"
+    },
+    "product_id": {
+      "type": "biginteger"
+    },
+    "qty": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "sub_total": {
+      "type": "biginteger"
+    },
+    "products": {
+      "via": "chart_details",
+      "collection": "products"
+    },
+    "charts": {
+      "via": "chart_details",
+      "collection": "charts",
+      "dominant": true
+    }
+  }
+}

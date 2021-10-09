@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charts",
+  "info": {
+    "name": "charts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chart_date": {
+      "type": "datetime"
+    },
+    "customer_id": {
+      "type": "biginteger"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "chart_details": {
+      "via": "charts",
+      "collection": "chart-details"
+    },
+    "customers": {
+      "collection": "customers",
+      "via": "charts",
+      "dominant": true
+    }
+  }
+}

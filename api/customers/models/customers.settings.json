@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "richtext"
+    },
+    "password": {
+      "type": "password"
+    },
+    "phone": {
+      "type": "richtext"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "charts": {
+      "via": "customers",
+      "collection": "charts"
+    }
+  }
+}
